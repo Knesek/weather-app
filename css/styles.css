@@ -60,14 +60,37 @@ img {
 
 }
 
-#weather p {
+p {
     display: inline-block;
-    color: white;
+    
     margin-top: .7em;
     margin-bottom: .25em;
     margin-right: 1em;
     margin-left: 1em;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     width: 30px;
 }
+
+
+p.condition {
+  text-align: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  margin: none;
+  width: 100%;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+

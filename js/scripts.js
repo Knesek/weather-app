@@ -6,11 +6,16 @@ $(document).ready(function() {
     unit: 'f',
     success: function(weather) {
       html = '<h1>'+weather.city+', '+weather.region+'</h1>';
-      html += '<h2>'+weather.temp+'&deg;'+'</h2>';
-      
+      html += '<h2>'+weather.temp+'&deg;'+'</h2>'; 
+      html += '<p class="condition">'+weather.text+'</p>';
+
+      html += '<br />'+'<br />';
+
       for(var i=0;i<weather.forecast.length;i++) {
         html += '<p>'+weather.forecast[i].day;
       }
+      html += '<br />';
+
 
       for(var i=0;i<weather.forecast.length;i++) {
         html += '<p>'+weather.forecast[i].high+'&deg;F</li></ul>'+'</p>';
