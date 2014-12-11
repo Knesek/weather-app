@@ -42,6 +42,6 @@ $('.js-geolocation').on('click', function() {
   });
 
 $('.img').foggy({
-   blurRadius: 1.5,         
+   blurRadius: 2,         
  }); 
 });

@@ -9,12 +9,14 @@ body {
 img {
   position: fixed;
   z-index: 0;
-  width: 320px;
+  width: 400px;
+  max-width: 100%;
 }
 
 #weather {
   width: 320px;
   margin: 0px auto;
+  margin-left: 3em;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
