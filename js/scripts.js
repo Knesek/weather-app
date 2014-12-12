@@ -24,27 +24,15 @@ $(document).ready(function() {
         html += '<p>'+weather.forecast[i].low+'&deg;F</li></ul>'+'</p>';
       }
 
-      if ("geolocation" in navigator) {
-  $('.js-geolocation').show(); 
-} else {
-  $('.js-geolocation').hide();
-}
 
-/* Where in the world are you? */
-$('.js-geolocation').on('click', function() {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    loadWeather(position.coords.latitude+','+position.coords.longitude); //load weather using your lat/lng coordinates
-  });
-});
-
-
-  
       $("#weather").html(html);
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
   });
+
+
 
 $('.img').foggy({
    blurRadius: 2,         
